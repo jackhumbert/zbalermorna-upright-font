@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	(function($){$.fn.easyTabs=function(option){var param=jQuery.extend({fadeSpeed:"fast",defaultContent:1,activeClass:'active'},option);$(this).each(function(){var thisId="#"+this.id;if(param.defaultContent==''){param.defaultContent=1;}
+	if(typeof param.defaultContent=="number")
+	{var defaultTab=$(thisId+" .tabs li:eq("+(param.defaultContent-1)+") a").attr('href').substr(1);}else{var defaultTab=param.defaultContent;}
+	$(thisId+" .tabs li a").each(function(){var tabToHide=$(this).attr('href').substr(1);$("#"+tabToHide).addClass('easytabs-tab-content');});hideAll();changeContent(defaultTab);function hideAll(){$(thisId+" .easytabs-tab-content").hide();}
+	function changeContent(tabId){hideAll();$(thisId+" .tabs li").removeClass(param.activeClass);$(thisId+" .tabs li a[href=#"+tabId+"]").closest('li').addClass(param.activeClass);if(param.fadeSpeed!="none")
+	{$(thisId+" #"+tabId).fadeIn(param.fadeSpeed);}else{$(thisId+" #"+tabId).show();}}
+	$(thisId+" .tabs li").click(function(){var tabId=$(this).find('a').attr('href').substr(1);changeContent(tabId);return false;});});}})(jQuery);
+	</script>
+	<link rel="stylesheet" href="specimen_files/specimen_stylesheet.css" type="text/css" charset="utf-8" />
+	<link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+
+	<style type="text/css">
+					body{
+				font-family: 'zbalermorna_upright';
+							}
+		</style>
+
+	<title>Zbalermorna Upright Font</title>
+	
+	
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function() {
+			$('#container').easyTabs({defaultContent:1});
+		});
+	</script>
+</head>
+
+<body>
+<div id="container">
+	<div id="header" style="font-family: Arial">Zbalermorna Upright</div>
+
+	<div id="main_content">
+
+		
+			<div id="specimen">
+				<div class="section">
+					<div class="grid12 firstcol">
+						<div class="huge" contenteditable="true">Zblalermorna</div>
+					</div>
+				</div>
+		
+				<div class="section">
+					<div class="glyph_range" contenteditable="true">le fasnu .y
+<br />
+le fonxa cu sanga .i la .alis goi ko'a frati la'edi'u lenu cpacu le fonxa .i ko'a kerlo ganse lu coi. .alis. .i mi du la rik. .i .a'o do kanro li'u .i lu coidoi rik. .i .ia mi kanro .i .a'o do go'i li'u .i lu .ia .i mi djica lonu djuno lenu do ba kansa mi le gusta ke vanci sanmi ca la zedjed. poi balvi jibni .i .a'o mi'o te tigni li'u
+<br /><br />
+.i ko'a spuda zo'e lu ko denpa .i mi nitcu lenu catlu lemi detri liste .y .y .y .i mi zifre .i .au mi kansa .i ma tcika li'u 
+<br /><br />
+.i la rik. goi ko'e spuda zo'e lu mi ba cpedu lo gusta jubme ca la xacac. .i .au do djica cuxna da poi fasnu .i pei skina .i pei zgike tigni .i pei xajmi tigni .i pei draci .i pei dansu li'u
+<br /><br />
+.i la .alis. danfu lu mi nelci loi zgike draci .i .i'a .au la lemizerAo co'oBL. se tigni ca ta .i mi nelci loi nu dansu li'u</div>
+				</div>
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												</d
+		
+			</div>
+		</div>
+		
+</div>
+</body>
+</html>
